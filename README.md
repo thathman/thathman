@@ -162,31 +162,15 @@ consulting · publishing operations · system integration · workflow automation
   <picture>
     <source
       media="(prefers-color-scheme: dark)"
-      srcset="https://github-readme-stats.vercel.app/api?username=thathman&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&theme=github_dark"
+      srcset="https://raw.githubusercontent.com/thathman/thathman/main/profile-summary-card-output/github_dark/0-profile-details.svg"
     />
     <source
       media="(prefers-color-scheme: light)"
-      srcset="https://github-readme-stats.vercel.app/api?username=thathman&show_icons=true&include_all_commits=true&count_private=true&hide_border=true"
+      srcset="https://raw.githubusercontent.com/thathman/thathman/main/profile-summary-card-output/github/0-profile-details.svg"
     />
     <img
-      height="170"
-      alt="Hendrix's GitHub statistics"
-      src="https://github-readme-stats.vercel.app/api?username=thathman&show_icons=true&include_all_commits=true&count_private=true&hide_border=true"
-    />
-  </picture>
-  <picture>
-    <source
-      media="(prefers-color-scheme: dark)"
-      srcset="https://github-readme-stats.vercel.app/api/top-langs?username=thathman&layout=compact&langs_count=8&hide_border=true&theme=github_dark"
-    />
-    <source
-      media="(prefers-color-scheme: light)"
-      srcset="https://github-readme-stats.vercel.app/api/top-langs?username=thathman&layout=compact&langs_count=8&hide_border=true"
-    />
-    <img
-      height="170"
-      alt="Hendrix's most-used GitHub languages"
-      src="https://github-readme-stats.vercel.app/api/top-langs?username=thathman&layout=compact&langs_count=8&hide_border=true"
+      alt="Hendrix's GitHub profile details"
+      src="https://raw.githubusercontent.com/thathman/thathman/main/profile-summary-card-output/github/0-profile-details.svg"
     />
   </picture>
 </p>
@@ -195,20 +179,37 @@ consulting · publishing operations · system integration · workflow automation
   <picture>
     <source
       media="(prefers-color-scheme: dark)"
-      srcset="https://github-readme-streak-stats.herokuapp.com/?user=thathman&hide_border=true&theme=github-dark-blue"
+      srcset="https://raw.githubusercontent.com/thathman/thathman/main/profile-summary-card-output/github_dark/1-repos-per-language.svg"
     />
     <source
       media="(prefers-color-scheme: light)"
-      srcset="https://github-readme-streak-stats.herokuapp.com/?user=thathman&hide_border=true"
+      srcset="https://raw.githubusercontent.com/thathman/thathman/main/profile-summary-card-output/github/1-repos-per-language.svg"
     />
     <img
-      alt="Hendrix's GitHub contribution streak"
-      src="https://github-readme-streak-stats.herokuapp.com/?user=thathman&hide_border=true"
+      height="180"
+      alt="Hendrix's repositories by language"
+      src="https://raw.githubusercontent.com/thathman/thathman/main/profile-summary-card-output/github/1-repos-per-language.svg"
+    />
+  </picture>
+  <picture>
+    <source
+      media="(prefers-color-scheme: dark)"
+      srcset="https://raw.githubusercontent.com/thathman/thathman/main/profile-summary-card-output/github_dark/3-stats.svg"
+    />
+    <source
+      media="(prefers-color-scheme: light)"
+      srcset="https://raw.githubusercontent.com/thathman/thathman/main/profile-summary-card-output/github/3-stats.svg"
+    />
+    <img
+      height="180"
+      alt="Hendrix's GitHub statistics"
+      src="https://raw.githubusercontent.com/thathman/thathman/main/profile-summary-card-output/github/3-stats.svg"
     />
   </picture>
 </p>
 
 ---
+
 
 ## Contribution Arcade
 
