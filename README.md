@@ -27,15 +27,10 @@ technology, payment infrastructure, AI tools, digital platforms, and games.
 
 ## About Me
 
-- I build open-source OJS plugins, AI-agent infrastructure, payment integrations, digital platforms, and games.
-- I develop browser-based party games and multiplayer experiences through the BoredRoom ecosystem.
-- I build AI-agent tools and Model Context Protocol servers.
-- I build and maintain OJS publishing, editorial, identity, payment, and journal-operations tools through [Airix360](https://github.com/Airix360).
-- I create secure payment integrations, business systems, websites, and operational tools.
-- I am available for freelance work, contract roles, consulting engagements, and selected long-term opportunities.
-- I am looking to collaborate on open-source publishing technology, AI tools, payment infrastructure, African-first products, and practical digital systems.
-- Ask me about MCP, OJS, Perfex CRM, payments, PWAs, realtime systems, WordPress, and product architecture.
-- Reach me at [hello@airixmedia.com](mailto:hello@airixmedia.com).
+- I build practical digital products spanning open-source scholarly publishing, AI-agent and MCP infrastructure, secure payments, business systems, websites, and multiplayer games.
+- Through [Airix360](https://github.com/Airix360), I develop OJS tools for editorial workflows, identity, payments, and journal operations; through BoredRoom, I build browser-based party and multiplayer experiences.
+- I am available for freelance work, contracts, consulting, and selected long-term roles, and open to collaboration on publishing technology, AI tools, payment infrastructure, African-first products, and useful digital systems.
+- Ask me about MCP, OJS, Perfex CRM, payments, PWAs, real-time systems, WordPress, and product architecture. Reach me at [hello@airixmedia.com](mailto:hello@airixmedia.com).
 
 ---
 
