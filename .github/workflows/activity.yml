@@ -46,7 +46,8 @@ jobs:
               if (event.repo?.name === profileRepo) continue;
 
               let text = null;
-              const repo = event.repo?.name ? repoLink(event.repo.name) : null;
+              const repoName = event.repo?.name;
+              const repo = repoName ? repoLink(repoName) : null;
 
               switch (event.type) {
                 case 'PushEvent': {
@@ -56,33 +57,45 @@ jobs:
                 }
                 case 'PullRequestEvent': {
                   const pr = event.payload?.pull_request;
-                  if (!pr) break;
+                  if (!pr || !repoName) break;
                   const action = event.payload.action === 'closed' && pr.merged
                     ? 'Merged'
                     : `${event.payload.action?.charAt(0).toUpperCase()}${event.payload.action?.slice(1)}`;
-                  text = `${action} [PR #${pr.number}](${pr.html_url}) in ${repo}`;
+                  const url = `https://github.com/${repoName}/pull/${pr.number}`;
+                  text = `${action} [PR #${pr.number}](${url}) in ${repo}`;
                   break;
                 }
                 case 'PullRequestReviewEvent': {
                   const pr = event.payload?.pull_request;
-                  if (pr) text = `Reviewed [PR #${pr.number}](${pr.html_url}) in ${repo}`;
+                  if (pr && repoName) {
+                    const url = `https://github.com/${repoName}/pull/${pr.number}`;
+                    text = `Reviewed [PR #${pr.number}](${url}) in ${repo}`;
+                  }
                   break;
                 }
                 case 'IssuesEvent': {
                   const issue = event.payload?.issue;
-                  if (!issue) break;
+                  if (!issue || !repoName) break;
                   const action = `${event.payload.action?.charAt(0).toUpperCase()}${event.payload.action?.slice(1)}`;
-                  text = `${action} [issue #${issue.number}](${issue.html_url}) in ${repo}`;
+                  const url = `https://github.com/${repoName}/issues/${issue.number}`;
+                  text = `${action} [issue #${issue.number}](${url}) in ${repo}`;
                   break;
                 }
                 case 'IssueCommentEvent': {
                   const issue = event.payload?.issue;
-                  if (issue) text = `Commented on [#${issue.number}](${issue.html_url}) in ${repo}`;
+                  if (issue && repoName) {
+                    const kind = issue.pull_request ? 'pull' : 'issues';
+                    const url = `https://github.com/${repoName}/${kind}/${issue.number}`;
+                    text = `Commented on [#${issue.number}](${url}) in ${repo}`;
+                  }
                   break;
                 }
                 case 'ReleaseEvent': {
                   const release = event.payload?.release;
-                  if (release) text = `Published [${release.tag_name}](${release.html_url}) in ${repo}`;
+                  if (release && repoName) {
+                    const url = `https://github.com/${repoName}/releases/tag/${encodeURIComponent(release.tag_name)}`;
+                    text = `Published [${release.tag_name}](${url}) in ${repo}`;
+                  }
                   break;
                 }
                 case 'CreateEvent': {
@@ -131,5 +144,5 @@ jobs:
             echo "No activity changes to publish."
             exit 0
           fi
-          git commit -m "v1.0.0.1: refresh contribution activity"
+          git commit -m "v1.1.0.0: refresh contribution activity"
           git push
