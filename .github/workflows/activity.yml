@@ -120,6 +120,16 @@ jobs:
               : '_No recent public contribution activity found._';
 
             let readme = fs.readFileSync('README.md', 'utf8');
+
+            const statusBadge = 'https://img.shields.io/badge/Available%20for-Work%20%26%20Collaboration-2ea44f?style=flat-square';
+            const viewsBadge = `https://komarev.com/ghpvc/?username=${username}&label=Profile%20Views&color=0e75b6&style=flat-square`;
+            const sponsorAnchor = `<p align="center">\n  <a href="https://github.com/sponsors/${username}">`;
+            const badgeBlock = `<p align="center">\n  <img src="${statusBadge}" alt="Available for work and collaboration" />\n  <img src="${viewsBadge}" alt="Profile views" />\n  <a href="https://github.com/sponsors/${username}">`;
+
+            if (!readme.includes(statusBadge)) {
+              readme = readme.replace(sponsorAnchor, badgeBlock);
+            }
+
             const section = `## Contribution Activity\n\n${start}\n${body}\n${end}\n\n---\n\n`;
 
             if (!readme.includes(start) || !readme.includes(end)) {
