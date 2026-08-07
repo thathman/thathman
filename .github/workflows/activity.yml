@@ -1,0 +1,135 @@
+name: Update Contribution Activity
+
+on:
+  schedule:
+    - cron: "17 * * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/activity.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Check out profile repository
+        uses: actions/checkout@v4
+
+      - name: Build contribution activity
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const fs = require('fs');
+            const username = context.repo.owner;
+            const profileRepo = `${username}/${context.repo.repo}`;
+
+            const { data: events } = await github.request(
+              'GET /users/{username}/events/public',
+              { username, per_page: 100 }
+            );
+
+            const repoLink = (name) => `[${name}](https://github.com/${name})`;
+            const date = (value) => new Intl.DateTimeFormat('en-GB', {
+              day: 'numeric', month: 'short', year: 'numeric', timeZone: 'Africa/Lagos'
+            }).format(new Date(value));
+
+            const items = [];
+            for (const event of events) {
+              if (event.repo?.name === profileRepo) continue;
+
+              let text = null;
+              const repo = event.repo?.name ? repoLink(event.repo.name) : null;
+
+              switch (event.type) {
+                case 'PushEvent': {
+                  const count = event.payload?.size || event.payload?.commits?.length || 1;
+                  text = `Pushed ${count} commit${count === 1 ? '' : 's'} to ${repo}`;
+                  break;
+                }
+                case 'PullRequestEvent': {
+                  const pr = event.payload?.pull_request;
+                  if (!pr) break;
+                  const action = event.payload.action === 'closed' && pr.merged
+                    ? 'Merged'
+                    : `${event.payload.action?.charAt(0).toUpperCase()}${event.payload.action?.slice(1)}`;
+                  text = `${action} [PR #${pr.number}](${pr.html_url}) in ${repo}`;
+                  break;
+                }
+                case 'PullRequestReviewEvent': {
+                  const pr = event.payload?.pull_request;
+                  if (pr) text = `Reviewed [PR #${pr.number}](${pr.html_url}) in ${repo}`;
+                  break;
+                }
+                case 'IssuesEvent': {
+                  const issue = event.payload?.issue;
+                  if (!issue) break;
+                  const action = `${event.payload.action?.charAt(0).toUpperCase()}${event.payload.action?.slice(1)}`;
+                  text = `${action} [issue #${issue.number}](${issue.html_url}) in ${repo}`;
+                  break;
+                }
+                case 'IssueCommentEvent': {
+                  const issue = event.payload?.issue;
+                  if (issue) text = `Commented on [#${issue.number}](${issue.html_url}) in ${repo}`;
+                  break;
+                }
+                case 'ReleaseEvent': {
+                  const release = event.payload?.release;
+                  if (release) text = `Published [${release.tag_name}](${release.html_url}) in ${repo}`;
+                  break;
+                }
+                case 'CreateEvent': {
+                  const refType = event.payload?.ref_type;
+                  const ref = event.payload?.ref;
+                  if (refType === 'repository') text = `Created ${repo}`;
+                  else if (refType && ref) text = `Created ${refType} \`${ref}\` in ${repo}`;
+                  break;
+                }
+              }
+
+              if (text) {
+                items.push(`- **${date(event.created_at)}** — ${text}`);
+                if (items.length === 6) break;
+              }
+            }
+
+            const start = '<!-- CONTRIBUTION-ACTIVITY:START -->';
+            const end = '<!-- CONTRIBUTION-ACTIVITY:END -->';
+            const body = items.length
+              ? items.join('\n')
+              : '_No recent public contribution activity found._';
+
+            let readme = fs.readFileSync('README.md', 'utf8');
+            const section = `## Contribution Activity\n\n${start}\n${body}\n${end}\n\n---\n\n`;
+
+            if (!readme.includes(start) || !readme.includes(end)) {
+              const anchor = '## Contribution Arcade';
+              if (!readme.includes(anchor)) {
+                throw new Error('Could not find Contribution Arcade section in README.md');
+              }
+              readme = readme.replace(anchor, `${section}${anchor}`);
+            } else {
+              const pattern = new RegExp(`${start}[\\s\\S]*?${end}`);
+              readme = readme.replace(pattern, `${start}\n${body}\n${end}`);
+            }
+
+            fs.writeFileSync('README.md', readme);
+
+      - name: Commit refreshed activity
+        run: |
+          git config user.name "Hendrix Nwaokolo"
+          git config user.email "n.hendrix.e@gmail.com"
+          git add README.md
+          if git diff --cached --quiet; then
+            echo "No activity changes to publish."
+            exit 0
+          fi
+          git commit -m "v1.0.0.1: refresh contribution activity"
+          git push
