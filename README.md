@@ -211,9 +211,9 @@ consulting · publishing operations · system integration · workflow automation
 <!-- CONTRIBUTION-ACTIVITY:START -->
 - **3 Aug 2026** — Pushed 1 commit to [Airix360/submissionFee-OJS](https://github.com/Airix360/submissionFee-OJS)
 - **3 Aug 2026** — Pushed 1 commit to [Airix360/ojs-multipay](https://github.com/Airix360/ojs-multipay)
-- **3 Aug 2026** — Merged [PR #1](undefined) in [Airix360/ojs-multipay](https://github.com/Airix360/ojs-multipay)
+- **3 Aug 2026** — Merged [PR #1](https://github.com/Airix360/ojs-multipay/pull/1) in [Airix360/ojs-multipay](https://github.com/Airix360/ojs-multipay)
 - **3 Aug 2026** — Pushed 1 commit to [Airix360/ojs-request-waiver](https://github.com/Airix360/ojs-request-waiver)
-- **3 Aug 2026** — Merged [PR #3](undefined) in [Airix360/ojs-magic-login](https://github.com/Airix360/ojs-magic-login)
+- **3 Aug 2026** — Merged [PR #3](https://github.com/Airix360/ojs-magic-login/pull/3) in [Airix360/ojs-magic-login](https://github.com/Airix360/ojs-magic-login)
 - **3 Aug 2026** — Pushed 1 commit to [Airix360/ojs-magic-login](https://github.com/Airix360/ojs-magic-login)
 <!-- CONTRIBUTION-ACTIVITY:END -->
 
