@@ -6,6 +6,8 @@ technology, payment infrastructure, AI tools, digital platforms, and games.
 </h3>
 
 <p align="center">
+  <img src="https://img.shields.io/badge/Available%20for-Work%20%26%20Collaboration-2ea44f?style=flat-square" alt="Available for work and collaboration" />
+  <img src="https://komarev.com/ghpvc/?username=thathman&label=Profile%20Views&color=0e75b6&style=flat-square" alt="Profile views" />
   <a href="https://github.com/sponsors/thathman">
     <img src="https://img.shields.io/badge/Sponsor-GitHub%20Sponsors-EA4AAA?style=flat-square&logo=githubsponsors&logoColor=white" alt="Sponsor on GitHub" />
   </a>
