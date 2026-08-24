@@ -209,12 +209,12 @@ consulting · publishing operations · system integration · workflow automation
 ## Contribution Activity
 
 <!-- CONTRIBUTION-ACTIVITY:START -->
-- **22 Aug 2026** — Closed [PR #2](https://github.com/thathman/OJS-Production-Preparation-Skill/pull/2) in [thathman/OJS-Production-Preparation-Skill](https://github.com/thathman/OJS-Production-Preparation-Skill)
-- **22 Aug 2026** — Merged [PR #3](https://github.com/thathman/OJS-Production-Preparation-Skill/pull/3) in [thathman/OJS-Production-Preparation-Skill](https://github.com/thathman/OJS-Production-Preparation-Skill)
-- **22 Aug 2026** — Pushed 1 commit to [thathman/OJS-Production-Preparation-Skill](https://github.com/thathman/OJS-Production-Preparation-Skill)
-- **22 Aug 2026** — Opened [PR #3](https://github.com/thathman/OJS-Production-Preparation-Skill/pull/3) in [thathman/OJS-Production-Preparation-Skill](https://github.com/thathman/OJS-Production-Preparation-Skill)
-- **22 Aug 2026** — Pushed 1 commit to [thathman/OJS-Production-Preparation-Skill](https://github.com/thathman/OJS-Production-Preparation-Skill)
-- **22 Aug 2026** — Pushed 1 commit to [thathman/OJS-Production-Preparation-Skill](https://github.com/thathman/OJS-Production-Preparation-Skill)
+- **24 Aug 2026** — Opened [PR #1](https://github.com/thathman/Perfex-MCP/pull/1) in [thathman/Perfex-MCP](https://github.com/thathman/Perfex-MCP)
+- **24 Aug 2026** — Pushed 1 commit to [thathman/Perfex-MCP](https://github.com/thathman/Perfex-MCP)
+- **24 Aug 2026** — Opened [PR #1](https://github.com/thathman/Perfex-Property-Monitor/pull/1) in [thathman/Perfex-Property-Monitor](https://github.com/thathman/Perfex-Property-Monitor)
+- **24 Aug 2026** — Pushed 1 commit to [thathman/Perfex-Property-Monitor](https://github.com/thathman/Perfex-Property-Monitor)
+- **24 Aug 2026** — Pushed 1 commit to [thathman/Perfex-MCP](https://github.com/thathman/Perfex-MCP)
+- **24 Aug 2026** — Created branch `planning/product-spec-v1` in [thathman/Perfex-MCP](https://github.com/thathman/Perfex-MCP)
 <!-- CONTRIBUTION-ACTIVITY:END -->
 
 ---
