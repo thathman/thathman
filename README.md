@@ -209,12 +209,12 @@ consulting · publishing operations · system integration · workflow automation
 ## Contribution Activity
 
 <!-- CONTRIBUTION-ACTIVITY:START -->
+- **4 Sept 2026** — Created branch `fix/narrow-layout-table-scroll` in [thathman/ojs-chatwoot-integration](https://github.com/thathman/ojs-chatwoot-integration)
 - **1 Sept 2026** — Created branch `fix/v2-fbv-password-field-fatal` in [thathman/ojs-chatwoot-integration](https://github.com/thathman/ojs-chatwoot-integration)
 - **1 Sept 2026** — Pushed 1 commit to [thathman/ojs-chatwoot-integration](https://github.com/thathman/ojs-chatwoot-integration)
 - **1 Sept 2026** — Pushed 1 commit to [thathman/ojs-chatwoot-integration](https://github.com/thathman/ojs-chatwoot-integration)
 - **1 Sept 2026** — Closed [PR #534](https://github.com/pkp/plugin-gallery/pull/534) in [pkp/plugin-gallery](https://github.com/pkp/plugin-gallery)
 - **1 Sept 2026** — Opened [PR #534](https://github.com/pkp/plugin-gallery/pull/534) in [pkp/plugin-gallery](https://github.com/pkp/plugin-gallery)
-- **1 Sept 2026** — Published [v2.0.0.0](https://github.com/thathman/ojs-chatwoot-integration/releases/tag/v2.0.0.0) in [thathman/ojs-chatwoot-integration](https://github.com/thathman/ojs-chatwoot-integration)
 <!-- CONTRIBUTION-ACTIVITY:END -->
 
 ---
