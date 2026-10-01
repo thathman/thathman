@@ -210,8 +210,6 @@ consulting · publishing operations · system integration · workflow automation
 
 <!-- CONTRIBUTION-ACTIVITY:START -->
 - **1 Sept 2026** — Closed [PR #534](https://github.com/pkp/plugin-gallery/pull/534) in [pkp/plugin-gallery](https://github.com/pkp/plugin-gallery)
-- **1 Sept 2026** — Opened [PR #534](https://github.com/pkp/plugin-gallery/pull/534) in [pkp/plugin-gallery](https://github.com/pkp/plugin-gallery)
-- **1 Sept 2026** — Published [v2.0.0.0](https://github.com/thathman/ojs-chatwoot-integration/releases/tag/v2.0.0.0) in [thathman/ojs-chatwoot-integration](https://github.com/thathman/ojs-chatwoot-integration)
 <!-- CONTRIBUTION-ACTIVITY:END -->
 
 ---
