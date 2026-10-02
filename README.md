@@ -209,7 +209,7 @@ consulting · publishing operations · system integration · workflow automation
 ## Contribution Activity
 
 <!-- CONTRIBUTION-ACTIVITY:START -->
-- **1 Sept 2026** — Closed [PR #534](https://github.com/pkp/plugin-gallery/pull/534) in [pkp/plugin-gallery](https://github.com/pkp/plugin-gallery)
+_No recent public contribution activity found._
 <!-- CONTRIBUTION-ACTIVITY:END -->
 
 ---
