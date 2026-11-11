@@ -209,12 +209,12 @@ consulting · publishing operations · system integration · workflow automation
 ## Contribution Activity
 
 <!-- CONTRIBUTION-ACTIVITY:START -->
-- **6 Nov 2026** — Pushed 1 commit to [thathman/rhema-studio](https://github.com/thathman/rhema-studio)
-- **6 Nov 2026** — Pushed 1 commit to [thathman/rhema-studio](https://github.com/thathman/rhema-studio)
-- **6 Nov 2026** — Created branch `claude/bible-picker-tells-rust` in [thathman/rhema-studio](https://github.com/thathman/rhema-studio)
-- **6 Nov 2026** — Pushed 1 commit to [thathman/rhema-studio](https://github.com/thathman/rhema-studio)
-- **6 Nov 2026** — Created branch `claude/obs-rehearsal-records-nothing` in [thathman/rhema-studio](https://github.com/thathman/rhema-studio)
-- **6 Nov 2026** — Pushed 1 commit to [thathman/rhema-studio](https://github.com/thathman/rhema-studio)
+- **11 Nov 2026** — Opened [PR #787](https://github.com/thathman/rhema-studio/pull/787) in [thathman/rhema-studio](https://github.com/thathman/rhema-studio)
+- **11 Nov 2026** — Merged [PR #786](https://github.com/thathman/rhema-studio/pull/786) in [thathman/rhema-studio](https://github.com/thathman/rhema-studio)
+- **11 Nov 2026** — Opened [PR #786](https://github.com/thathman/rhema-studio/pull/786) in [thathman/rhema-studio](https://github.com/thathman/rhema-studio)
+- **11 Nov 2026** — Merged [PR #785](https://github.com/thathman/rhema-studio/pull/785) in [thathman/rhema-studio](https://github.com/thathman/rhema-studio)
+- **11 Nov 2026** — Opened [PR #785](https://github.com/thathman/rhema-studio/pull/785) in [thathman/rhema-studio](https://github.com/thathman/rhema-studio)
+- **11 Nov 2026** — Merged [PR #784](https://github.com/thathman/rhema-studio/pull/784) in [thathman/rhema-studio](https://github.com/thathman/rhema-studio)
 <!-- CONTRIBUTION-ACTIVITY:END -->
 
 ---
